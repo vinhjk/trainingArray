@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sum = 0;
+    let TB = 0;
+    let n = parseInt(prompt("Nhap do dai cua mang :"));
+    let arr = new Array();
+    let max;
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter a number :"));
+        max = arr[0];
+        if (max < arr[i]) {
+            max = arr[i];
+        }
+        sum += arr[i];
+        TB = sum / n;
+    }
+    alert("Max = " + max );
+    alert("Trung binh cua cac phan tu trong mang = " + TB );
+</script>
+</body>
+</html>
