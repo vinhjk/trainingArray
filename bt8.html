@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function sortNumbers(array) {
+        for (let i = 0; i < array.length; i++) {
+               arr.sort(function (a,b){return b-a});
+        }
+        return arr;
+    }
+
+    let n = parseInt(prompt("Enter the length of the array :"));
+    let arr = new Array();
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Enter the number of the array :");
+    }
+    let num = sortNumbers(arr);
+    alert(num);
+</script>
+</body>
+</html>
